@@ -30,6 +30,58 @@ var articleOne={
 
 
 };
+var articleTwo={
+	title:'Article Two | Sukhada Kulkarni',
+	heading:'Article Two',
+	date:'February 19 2018',
+	content:
+ ` <p>
+               Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+				Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+   </p>
+   <p>
+               Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+				Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+  </p>
+    <p>
+               Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+				Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+  </p>`
+
+
+};
+var articlThree={
+	title:'Article Three | Sukhada Kulkarni',
+	heading:'Article Three',
+	date:'February 19 2018',
+	content:
+ ` <p>
+               Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+				Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+   </p>
+   <p>
+               Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+				Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+  </p>
+    <p>
+               Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+				Content of first article.Content of first article.Content of first article.
+               Content of first article.Content of first article.Content of first article.
+  </p>`
+
+
+};
 function createTemp(data){
     var title=data.title;
     var date=data.date;
@@ -76,12 +128,11 @@ app.get('/', function (req, res) {
 
 });
 app.get('/article-two', function (req, res) {
-      res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-
+    res.send(createTemp(articleTwo));
 });
 
 app.get('/article-three', function (req, res) {
-      res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+     res.send(createTemp(articleThree));
 
 });
 
