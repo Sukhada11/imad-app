@@ -56,7 +56,7 @@ var articleTwo={
 
 
 };
-var articlThree={
+var articleThree={
 	title:'Article Three | Sukhada Kulkarni',
 	heading:'Article Three',
 	date:'February 19 2018',
