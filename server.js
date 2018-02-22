@@ -30,7 +30,14 @@ var articleOne={
 
 
 };
-var HTMLtemp=
+function createTemp(data){
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
+    
+    
+    var HTMLtemp=
 
    `<html>
     <head>
@@ -58,13 +65,14 @@ var HTMLtemp=
 
    
 ;
-
+return HTMLtemp;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+ app.get('/article-one', function (req, res) {
+    res.send(createTemp(articleOne));
 
 });
 app.get('/article-two', function (req, res) {
