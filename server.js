@@ -84,6 +84,7 @@ var articles={
 
 }};
 function createTemp(data){
+    
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
