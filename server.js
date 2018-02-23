@@ -83,13 +83,13 @@ var articles={
 
 
 }};
-function createTemp(data){
+function createTemp( data){
     
-    var title=data.title;
+
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
-    
+    var title=data.title;
     
     var HTMLtemp=
 
