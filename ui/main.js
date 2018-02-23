@@ -1,6 +1,5 @@
 console.log('Loaded!');
-var x=document.getElementById("text");
-x.innerHTML="New value"
+
 var img=document.getElementById("mandi");
 marginLeft=0;
 function moveRight(){
